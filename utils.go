@@ -9,3 +9,10 @@ func Contains(a []string, b string) bool {
 	return false
 
 }
+func ContainsInt(a []int, b int) bool {
+	for _, line := range a {
+		if line == b {
+			return true
+		}
+	}
+	return false
